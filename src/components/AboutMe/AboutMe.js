@@ -12,28 +12,41 @@ export default function AboutMe() {
     return (
         <div>
             <Grid container justify = 'center'>
-                <Grid container item xs = {6} >
+                <Grid item xs = {6} spacing = {2} style = {{left: "50%", top: "50%"}}>
                     <Grid item>
-                        <Avatar src = {portrait} style = {{left: "50%", top: "50%", width: "50%", height: "50%", borderRadius: "5%"}}/>
+                        <Avatar src = {portrait} style = {{ width: "50%", height: "50%", borderRadius: "5%"}}/>
                     </Grid>
                     
-                    <Grid container>
-                        <IconButton>
-                            <EmailIcon />
-                        </IconButton>
+                    <Grid container spacing = {4} >
+                        <Grid item>
+                            <IconButton>
+                                <EmailIcon />
+                            </IconButton>
+                        </Grid>
 
-                        <IconButton>
-                            <GitHubIcon />
-                        </IconButton>
+                        <Grid item>
+                            <IconButton>
+                                <GitHubIcon />
+                            </IconButton>
+                        </Grid>
+                        
+                        <Grid item>
+                            <IconButton>
+                                <LinkedInIcon />
+                            </IconButton>
+                        </Grid>
+                        
+                        <Grid item>
+                            <Button variant = "contained" size = "small">
+                                Blog
+                            </Button>
+                        </Grid> 
 
-                        <IconButton>
-                            <LinkedInIcon />
-                        </IconButton>
-
-                        <Button variant = "contained" size = "small">
-                            Blog
-                        </Button>
-
+                        <Grid item>
+                            <Button variant = "contained" size = "small">
+                                Resume
+                            </Button>
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs = {6}>
