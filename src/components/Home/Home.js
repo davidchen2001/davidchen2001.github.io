@@ -1,7 +1,7 @@
 import React from 'react';
 
 import WallPaper from '../../assets/YourNameWallpaper.mp4';
-import AboutMe from '../../components/AboutMe/AboutMe';
+import Main from "../Main/Main";
 import "./Home.css"
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
             <video className='showcase-video' autoPlay loop muted>
                 <source src={WallPaper} type='video/mp4' />
             </video>
-            <AboutMe />
+            <Main />
         </div>
     );
 }
