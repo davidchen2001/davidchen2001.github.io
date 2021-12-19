@@ -1,3 +1,9 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .showcase-video {
     position: absolute;
     top: 0;

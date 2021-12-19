@@ -1,5 +1,5 @@
 export const introduction = (
     <p>
-        Hi! I'm David
+        Hey! I'm David
     </p>
 );
