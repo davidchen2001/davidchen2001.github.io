@@ -3,3 +3,8 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.about-me-container {
+    width: 500px;
+
+}

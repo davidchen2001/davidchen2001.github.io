@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path = "/" element = {<Home />} />
-          <Route exact path="/posts" element={<AllPosts />} />
-          <Route path="/posts/:slug"  element={<OnePost />} />
+          <Route exact path="/blog" element={<AllPosts />} />
+          <Route path="/blog/:slug"  element={<OnePost />} />
         </Routes>
       </BrowserRouter>
    </div>

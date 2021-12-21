@@ -17,7 +17,7 @@ import "./AboutMe.css";
 export default function AboutMe() {
   return (
     <div className="about-me">
-      <Grid justify="center" alignItems="center">
+      <Grid justify="center" alignItems="center" >
         <Grid item>
           <Typography>{introduction}</Typography>
         </Grid>
@@ -41,18 +41,16 @@ export default function AboutMe() {
             </IconButton>
           </Grid>
 
-          <Grid container spacing={2}>
-            <Grid item>
-              <Button variant="contained" size="small">
-                Blog
-              </Button>
-            </Grid>
+          <Grid item>
+            <Button variant="outlined" size="small">
+              Blog
+            </Button>
+          </Grid>
 
-            <Grid item>
-              <Button variant="contained" size="small">
-                Resume
-              </Button>
-            </Grid>
+          <Grid item>
+            <Button variant="outlined" size="small">
+              Resume
+            </Button>
           </Grid>
         </Grid>
       </Grid>
