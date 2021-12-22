@@ -11,7 +11,7 @@ export const introduction = (
         When I'm not programming or working, I like cooking, watching anime, and bouldering. I also occasionally maintain a blog. 
         </Typography>
         <br/>
-        <Typography>
+        <Typography variant = "body1">
         I'm always down to chat! Please feel free to reach out. 
         </Typography>
         <br/>
