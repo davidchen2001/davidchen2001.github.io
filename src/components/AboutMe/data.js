@@ -17,3 +17,11 @@ export const introduction = (
         <br/>
     </div>
 );
+
+export const links = {
+    email: "chuwei.chen2001@gmail.com",
+    github: "https://github.com/Dioceus",
+    linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
+    blog: "blog",
+    resume: "https://drive.google.com/file/d/1e-ww_pOWbSpfLagcpoefJP_PseKrKj7-/view?usp=sharing"
+}
