@@ -8,7 +8,7 @@ export const introduction = (
         <br/>
         <Typography variant = "body1">
         I'm currently working as an Embedded Software Engineering Intern at Ciena.
-        When I'm not programming or working, I like cooking, watching anime, and bouldering. I also occasionally maintain a blog. 
+        
         </Typography>
         <br/>
         <Typography variant = "body1">
