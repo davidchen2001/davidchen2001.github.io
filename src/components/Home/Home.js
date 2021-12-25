@@ -1,14 +1,15 @@
 import React from 'react';
 
 import Main from "../Main/Main";
-import Background from "../Background/Background";
+import BackgroundParticles from '../Background/BackgroundParticles';
+
 import "./Home.css";
 
 export default function Home() {
 
     return (
         <div className='home'>
-            <Background />
+            <BackgroundParticles />
             <Main />
         </div>
     );
