@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client.js";
 
-export default function AllPosts() {
+export default function Blog() {
   const [allPostsData, setAllPosts] = useState(null);
 
   useEffect(() => {
