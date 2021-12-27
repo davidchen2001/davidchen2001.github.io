@@ -4,6 +4,7 @@
 /node_modules
 /portfolioblog/node_modules
 /portfolioblog/sanity.json
+/portfolioblog/config
 /.pnp
 .pnp.js
 

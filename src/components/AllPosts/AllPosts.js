@@ -24,26 +24,28 @@ export default function AllPosts() {
   }, []);
 
   return (
-    <div className="bg-green-100 min-h-screen p-12">
+    <div>
       <div className="container mx-auto">
-        <h2 className="text-5xl flex justify-center ">Blog Posts</h2>
+        <h2 className="text-5xl flex justify-center ">Blog</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my blog posts page!
+          Welcome to my blog
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allPostsData &&
-            allPostsData.map((post, index) => (
-              <Link to={"/" + post.slug.current} key={post.slug.current}>
+            allPostsData.map((post, index) => ( 
+              <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                 <span
                   className="block h-64 relative rounded shadow leading-snug bg-white
                       border-l-8 border-green-400"
                   key={index}
                 >
+                  {(post.mainImage ? 
                   <img
-                    className="w-full h-full rounded-r object-cover absolute"
-                    src={post.mainImage.asset.url}
-                    alt=""
-                  />
+                  className="w-full h-full rounded-r object-cover absolute"
+                  src={post.mainImage.asset.url}
+                  alt=""
+                  />  : null )}
+                  
                   <span
                     className="block relative h-full flex justify-end items-end pr
                       -4 pb-4"
