@@ -8,6 +8,8 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme } from "../Themes/Themes.js";
 import { GlobalStyles } from "../Themes/globalStyles.js";
 
+import "./BlogPost.css";
+
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -43,9 +45,7 @@ export default function Blog() {
   return (
     <ThemeProvider theme = {lightTheme}>
       <GlobalStyles />
-        <div>
-          <div className="">
-            <div className="">
+        <div className = "blog-post-container">
               <div className="">
                 {/* Title Section */}
                 <div >
@@ -60,7 +60,7 @@ export default function Blog() {
                       alt="Author is Kap"
                       />
                     ): null}
-                    <h4 className="cursive flex items-center pl-2 text-2xl">
+                    <h4 className="flex items-center">
                       {postData.name}
                     </h4>
                   </div>
@@ -81,8 +81,6 @@ export default function Blog() {
                 projectId={sanityClient.clientConfig.projectId}
                 dataset={sanityClient.clientConfig.dataset}
               />
-            </div>
-          </div>
         </div>
     </ThemeProvider>
   );
