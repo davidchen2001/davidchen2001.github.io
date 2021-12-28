@@ -3,12 +3,15 @@ import React from "react";
 import PersonalLinks from "../PersonalLinks/PersonalLinks";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-export default function Header() {
+export default function Header(props) {
+
+    const { backLink } = props;
+
     return (
         <div className = "flex justify-center">
             <Grid container spacing = {2}>
                 <Grid item>
-                    <Link href="/">
+                    <Link href={backLink}>
                     <IconButton>
                         <ArrowBackIcon fontSize="medium"/>
                     </IconButton>

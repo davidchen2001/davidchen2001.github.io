@@ -42,7 +42,7 @@ export default function Blog() {
           I write about anything I find interesting.
         </h3>
         <div className="header-container">
-          <Header />
+          <Header backLink = {"/"}/>
         </div>
         
         <br />

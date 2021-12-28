@@ -11,6 +11,7 @@ import { lightTheme } from "../Themes/Themes.js";
 import { GlobalStyles } from "../Themes/globalStyles.js";
 
 import "./BlogPost.css";
+import Header from "../Header/Header.js";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -90,6 +91,7 @@ export default function BlogPost() {
                           </Typography>
                         </Grid>
                       )}
+
                     </Grid>
                   </div>
                 </div>
