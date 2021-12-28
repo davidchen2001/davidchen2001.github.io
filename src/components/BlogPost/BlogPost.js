@@ -4,6 +4,9 @@ import sanityClient from "../../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 
+import { Typography, Grid, Divider } from "@mui/material";
+import Markdown from "markdown-to-jsx";
+
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "../Themes/Themes.js";
 import { GlobalStyles } from "../Themes/globalStyles.js";
@@ -15,7 +18,7 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-export default function Blog() {
+export default function BlogPost() {
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
 
@@ -31,12 +34,16 @@ export default function Blog() {
               url
             }
           },
+          publishedAt,
+          "categories": categories[]->title,
           body,
           "name": author->name,
           "authorImage": author->image
        }`
       )
-      .then((data) => setPostData(data[0]))
+      .then((data) => {
+        setPostData(data[0]);
+      })
       .catch(console.error);
   }, [slug]);
 
@@ -46,12 +53,22 @@ export default function Blog() {
     <ThemeProvider theme = {lightTheme}>
       <GlobalStyles />
         <div className = "blog-post-container">
+          <Grid
+          item
+          xs = {12}
+          md = {8}
+          sx = {{
+            '& .markdown': {
+              py: 3,
+            },
+          }}
+          >
+            <Typography variant = "h4" gutterBottom>
+              {postData.title}
+            </Typography>
+
               <div className="">
-                {/* Title Section */}
                 <div >
-                  <h2>
-                    {postData.title}
-                  </h2>
                   <div className="">
                     {postData.authorImage ? (
                       <img
@@ -60,9 +77,21 @@ export default function Blog() {
                       alt="Author is Kap"
                       />
                     ): null}
-                    <h4 className="flex items-center">
-                      {postData.name}
-                    </h4>
+                    <Grid container spacing = {2}>
+                      <Grid item>
+                        <h4 className="flex items-center">
+                          {postData.publishedAt.toString().substring(0,10)}
+                        </h4>
+                      </Grid>
+                      
+                      {postData.categories.map(category => 
+                        <Grid item>
+                          <Typography key = {category} className="flex items-center">
+                            {category}
+                          </Typography>
+                        </Grid>
+                      )}
+                    </Grid>
                   </div>
                 </div>
               </div>
@@ -74,13 +103,18 @@ export default function Blog() {
                 style={{ height: "400px" }}
                 />
               ): null}
-            </div>
-            <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+
+            <Divider />
+
+            <div className="py-12 lg:prose-xl">
               <BlockContent
                 blocks={postData.body}
                 projectId={sanityClient.clientConfig.projectId}
                 dataset={sanityClient.clientConfig.dataset}
               />
+            </div>
+
+          </Grid>
         </div>
     </ThemeProvider>
   );
