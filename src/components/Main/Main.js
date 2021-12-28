@@ -7,7 +7,7 @@ import {
 import portrait from "../../assets/image.jpg";
 
 import "./Main.css";
-import AboutMe from "../AboutMe/AboutMe";
+import About from "../About/About";
 
 export default function Main() {
   return (
@@ -21,7 +21,7 @@ export default function Main() {
         </Grid> 
 
         <Grid item xs = {6} className = "about-me-container">
-          <AboutMe />
+          <About />
         </Grid>
       </Grid>
     </div>

@@ -5,7 +5,6 @@ import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 
 import { Typography, Grid, Divider } from "@mui/material";
-import Markdown from "markdown-to-jsx";
 
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "../Themes/Themes.js";

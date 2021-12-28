@@ -1,6 +1,12 @@
+import { Divider, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
 import sanityClient from "../../client.js";
+import { lightTheme } from "../Themes/Themes.js";
+import { GlobalStyles } from "../Themes/globalStyles.js";
+
+import "./Blog.css";
 
 export default function Blog() {
   const [allPostsData, setAllPosts] = useState(null);
@@ -11,6 +17,7 @@ export default function Blog() {
         `*[_type == "post"]{
         title,
         slug,
+        publishedAt,
         mainImage{
         asset->{
           _id,
@@ -24,44 +31,41 @@ export default function Blog() {
   }, []);
 
   return (
-    <div>
+    <ThemeProvider theme = {lightTheme}>
+      <GlobalStyles />
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center ">Blog</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my blog
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="link-container">
           {allPostsData &&
             allPostsData.map((post, index) => ( 
               <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                 <span
-                  className="block h-64 relative rounded shadow leading-snug bg-white
-                      border-l-8 border-green-400"
                   key={index}
                 >
-                  {(post.mainImage ? 
-                  <img
-                  className="w-full h-full rounded-r object-cover absolute"
-                  src={post.mainImage.asset.url}
-                  alt=""
-                  />  : null )}
-                  
-                  <span
-                    className="block relative h-full flex justify-end items-end pr
-                      -4 pb-4"
-                  >
-                    <h2
-                      className="text-gray-800 text-lg font-bold px-3 py-4 bg-red-700
-                        text-red-100 bg-opacity-75 rounded"
-                    >
-                      {post.title}
-                    </h2>
-                  </span>
+                  <Grid container spacing = {5}>
+                    <Grid item>
+                      <Typography variant = "h4">
+                        {post.title}
+                      </Typography>
+                    </Grid>
+
+                    <Grid item>
+                      <Typography>
+                        {post.publishedAt.toString().substring(0,10)}
+                      </Typography>
+                    </Grid>
+                  </Grid>
+
+                  <br />
                 </span>
               </Link>
             ))}
         </div>
       </div>
-    </div>
+    
+    </ThemeProvider>
   );
 }

@@ -13,9 +13,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { introduction, links } from "./data";
 
-import "./AboutMe.css";
+import "./About.css";
 
-export default function AboutMe() {
+export default function About() {
   return (
     <div className="about-me">
       <Grid justify="center" alignItems="center" >
