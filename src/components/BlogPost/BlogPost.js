@@ -70,13 +70,6 @@ export default function BlogPost() {
               <div className="">
                 <div >
                   <div className="">
-                    {postData.authorImage ? (
-                      <img
-                      src={urlFor(postData.authorImage).url()}
-                      className="w-10 h-10 rounded-full"
-                      alt="Author is Kap"
-                      />
-                    ): null}
                     <Grid container spacing = {2}>
                       <Grid item>
                         <h4 className="flex items-center">
@@ -91,6 +84,10 @@ export default function BlogPost() {
                           </Typography>
                         </Grid>
                       )}
+
+                      <div className = "blog-post-header-container">
+                        <Header backLink = {"/blog"}/>
+                      </div>
 
                     </Grid>
                   </div>
