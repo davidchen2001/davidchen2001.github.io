@@ -5,8 +5,10 @@ import { ThemeProvider } from "styled-components";
 import sanityClient from "../../client.js";
 import { lightTheme } from "../Themes/Themes.js";
 import { GlobalStyles } from "../Themes/globalStyles.js";
+import Header from "../Header/Header.js";
 
 import "./Blog.css";
+import { flexbox } from "@mui/system";
 
 export default function Blog() {
   const [allPostsData, setAllPosts] = useState(null);
@@ -33,14 +35,22 @@ export default function Blog() {
   return (
     <ThemeProvider theme = {lightTheme}>
       <GlobalStyles />
+      
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center ">Blog</h2>
-        <h3 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my blog
+        <h3 className="text-lg text-gray-600 flex justify-center ">
+          I write about anything I find interesting.
         </h3>
+        <div className="header-container">
+          <Header />
+        </div>
+        
+        <br />
+
         <div className="link-container">
+          
           {allPostsData &&
-            allPostsData.map((post, index) => ( 
+            allPostsData.reverse().map((post, index) => ( 
               <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                 <span
                   key={index}
@@ -53,7 +63,7 @@ export default function Blog() {
                     </Grid>
 
                     <Grid item>
-                      <Typography>
+                      <Typography variant = "h4">
                         {post.publishedAt.toString().substring(0,10)}
                       </Typography>
                     </Grid>
