@@ -41,7 +41,7 @@ export default function About() {
         </Grid>
 
         <br />
-        <PersonalLinks color = {grey[50]} size = "large" />
+        <PersonalLinks color = {grey[50]} fontSize = "large" />
       </Grid>
     </div>
   );
