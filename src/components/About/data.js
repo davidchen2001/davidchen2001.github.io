@@ -24,5 +24,5 @@ export const links = {
     github: "https://github.com/Dioceus",
     linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
     blog: "blog",
-    resume: "https://drive.google.com/file/d/1e-ww_pOWbSpfLagcpoefJP_PseKrKj7-/view?usp=sharing"
+    resume: "https://drive.google.com/file/d/1ujG3Pmz3FuTHiDhXP6ZA6pyOR1GBog_D/view?usp=sharing"
 }
