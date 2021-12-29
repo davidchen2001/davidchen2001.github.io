@@ -1,3 +1,4 @@
+import React from 'react';
 import { Grid, Link, IconButton } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
