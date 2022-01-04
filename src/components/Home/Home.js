@@ -9,8 +9,9 @@ export default function Home() {
 
     return (
         <div className='home'>
-            <BackgroundParticles />
+            
             <Main />
+            
         </div>
     );
 }

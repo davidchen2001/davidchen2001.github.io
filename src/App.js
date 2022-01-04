@@ -6,7 +6,7 @@ import BlogPost from "./components/BlogPost/BlogPost.js";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/Themes/globalStyles.js";
-import { darkTheme } from "./components/Themes/Themes.js";
+import { lightTheme, darkTheme } from "./components/Themes/Themes.js";
 
 import "./App.css";
 

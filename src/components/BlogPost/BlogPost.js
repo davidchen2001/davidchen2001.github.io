@@ -22,6 +22,16 @@ export default function BlogPost() {
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
 
+  const serializers = {
+    types: {
+      code: props => (
+        <pre data-language={props.node.language}>
+          <code>{props.node.code}</code>
+        </pre>
+      )
+    }
+  }
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -107,8 +117,9 @@ export default function BlogPost() {
             <div className="py-12 lg:prose-xl">
               <BlockContent
                 blocks={postData.body}
-                projectId={sanityClient.clientConfig.projectId}
-                dataset={sanityClient.clientConfig.dataset}
+                projectId={process.env.REACT_APP_PROJECT_ID}
+                dataset={sanityClient.dataset}
+                serializers={serializers}
               />
             </div>
 
