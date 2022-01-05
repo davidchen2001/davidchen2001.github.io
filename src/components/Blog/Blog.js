@@ -8,7 +8,6 @@ import { GlobalStyles } from "../Themes/globalStyles.js";
 import Header from "../Header/Header.js";
 
 import "./Blog.css";
-import { flexbox } from "@mui/system";
 
 export default function Blog() {
   const [allPostsData, setAllPosts] = useState(null);
@@ -48,31 +47,34 @@ export default function Blog() {
         <br />
 
         <div className="link-container">
-          
-          {allPostsData &&
-            allPostsData.reverse().map((post, index) => ( 
-              <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
-                <span
-                  key={index}
-                >
-                  <Grid container spacing = {5}>
-                    <Grid item>
-                      <Typography variant = "h4">
-                        {post.title}
-                      </Typography>
-                    </Grid>
 
-                    <Grid item>
-                      <Typography variant = "h4">
-                        {post.publishedAt.toString().substring(0,10)}
-                      </Typography>
-                    </Grid>
-                  </Grid>
+          <Grid>
+            {allPostsData &&
+              allPostsData.reverse().map((post, index) => ( 
+                <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
+                  <span
+                    key={index}
+                  >
+                      <Grid item spacing = {5} className = "blog-post-container">
+                        <Grid container spacing = {5} justifyContent="space-between">
+                          <Grid item >
+                            <Typography variant = "h4">
+                              {post.title}
+                            </Typography>
+                          </Grid>
 
-                  <br />
-                </span>
-              </Link>
-            ))}
+                          <Grid item  className = "blog-post-date-text">
+                            <Typography variant = "h4">
+                              {post.publishedAt.toString().substring(0,10)}
+                            </Typography>
+                          </Grid>
+                        </Grid>
+                      </Grid> 
+                    <br />
+                  </span>
+                </Link>
+              ))}
+          </Grid>
         </div>
       </div>
     

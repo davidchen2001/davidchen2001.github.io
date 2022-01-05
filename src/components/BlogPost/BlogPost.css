@@ -9,3 +9,11 @@
     margin-left: auto; 
     margin-right: 0;    
 }
+
+.blog-post-title-text {
+    float: left;
+}
+
+.blog-post-date-text {
+    margin-left: auto;
+}
