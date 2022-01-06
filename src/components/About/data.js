@@ -1,8 +1,16 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import {Typography, ThemeProvider, createTheme} from "@mui/material";
+
+const theme = createTheme({
+    typography: {
+      body1: {
+        fontSize: 17,
+      },
+    },
+  });
 
 export const introduction = (
-    <div>
+    <ThemeProvider theme = {theme}>
         <Typography variant = "h4">
         Hey! I'm David.
         </Typography>
@@ -16,7 +24,7 @@ export const introduction = (
         I'm always down to chat! Please feel free to reach out. 
         </Typography>
         <br/>
-    </div>
+    </ThemeProvider>
 );
 
 export const links = {
