@@ -25,7 +25,7 @@ export default function About() {
             <Link
             to = "#" 
             href = {links.blog}>
-              <Button variant="outlined" size="medium" sx = {{color: grey[50]}}>
+              <Button variant="outlined" size="medium" >
                 Blog  
               </Button>
             </Link>
@@ -33,7 +33,7 @@ export default function About() {
 
           <Grid item>
             <Link href = {links.resume}>
-              <Button variant="outlined" size="medium" sx = {{color: grey[50]}}>
+              <Button variant="outlined" size="medium" >
                 Resume
               </Button>
             </Link>
@@ -41,7 +41,7 @@ export default function About() {
         </Grid>
 
         <br />
-        <PersonalLinks color = {grey[50]} fontSize = "large" />
+        <PersonalLinks fontSize = "large" />
       </Grid>
     </div>
   );

@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
         <BrowserRouter>
           <Routes>
