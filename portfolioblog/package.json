@@ -14,12 +14,12 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.23.2",
+    "@sanity/base": "^2.23.3",
     "@sanity/core": "^2.23.2",
-    "@sanity/default-layout": "^2.23.2",
+    "@sanity/default-layout": "^2.23.3",
     "@sanity/default-login": "^2.23.2",
-    "@sanity/desk-tool": "^2.23.2",
-    "@sanity/vision": "^2.23.2",
+    "@sanity/desk-tool": "^2.23.4",
+    "@sanity/vision": "^2.23.3",
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
@@ -28,6 +28,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://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@github.com/davidchen2001/davidchen2001.github.io.git"
+    "url": "https://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@github.com/davidchen2001/davidchen2001.github.io.git"
   }
 }
