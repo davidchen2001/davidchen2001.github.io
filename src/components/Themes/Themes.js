@@ -1,3 +1,23 @@
+import { createTheme } from "@mui/material"
+
+export const fontFamily = createTheme({
+    typography: {
+      fontFamily: [
+        'Nunito',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(','),
+    },
+});
+
 export const darkTheme = {
     body: '#363537',
     text: '#FAFAFA',

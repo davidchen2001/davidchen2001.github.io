@@ -7,8 +7,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { Typography, Grid, Divider } from "@mui/material";
 
 import { ThemeProvider } from "styled-components";
-import { lightTheme } from "../Themes/Themes.js";
-import { GlobalStyles } from "../Themes/globalStyles.js";
+import { fontFamily} from "../Themes/Themes.js";
 
 import "./BlogPost.css";
 import Header from "../Header/Header.js";
@@ -60,8 +59,7 @@ export default function BlogPost() {
   if (!postData) return <div>Loading...</div>;
 
   return (
-    <ThemeProvider theme = {lightTheme}>
-      <GlobalStyles />
+    <ThemeProvider theme = {fontFamily}>
         <div className = "blog-post-container">
           <Grid
           item

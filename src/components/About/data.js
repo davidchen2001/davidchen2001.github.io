@@ -3,7 +3,7 @@ import {Typography} from "@mui/material";
 
 export const introduction = (
     <div>
-        <Typography variant = "h5">
+        <Typography variant = "h4">
         Hey! I'm David.
         </Typography>
         <br/>

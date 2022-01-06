@@ -1,10 +1,9 @@
-import { Divider, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import sanityClient from "../../client.js";
-import { lightTheme } from "../Themes/Themes.js";
-import { GlobalStyles } from "../Themes/globalStyles.js";
+import { fontFamily } from "../Themes/Themes.js";
 import Header from "../Header/Header.js";
 
 import "./Blog.css";
@@ -32,9 +31,7 @@ export default function Blog() {
   }, []);
 
   return (
-    <ThemeProvider theme = {lightTheme}>
-      <GlobalStyles />
-      
+    <ThemeProvider theme = {fontFamily}>
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center ">Blog</h2>
         <h3 className="text-lg text-gray-600 flex justify-center ">
