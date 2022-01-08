@@ -21,8 +21,8 @@ export default function About() {
             <Typography>{introduction}</Typography>
           </Grid>
 
-          <Grid container spacing = {3}> 
-            <Grid item>
+          <Grid container direction = "row" > 
+            <Grid item xs = {6} sm = {2} md = {2} lg = {3}>
               <Link
               to = "#" 
               href = {links.blog}>
@@ -32,7 +32,7 @@ export default function About() {
               </Link>
             </Grid>
 
-            <Grid item>
+            <Grid item xs = {6} sm = {2} md = {2} lg = {3}>
               <Link href = {links.resume}>
                 <Button variant="outlined" size="medium" >
                   Resume

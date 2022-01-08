@@ -12,8 +12,8 @@ import About from "../About/About";
 export default function Main() {
   return (
     <div className="main-container">
-      <Grid container justify="space-between">
-        <Grid item xs = {12} sm = {12} md = {12} lg = {6}>
+      <Grid container justifyContent="center" alignItems="center" spacing = {4}>
+        <Grid item xs = {12} sm = {12} md = {12} lg = {6} justifyContent="center" alignItems = "center">
             <Avatar
               src={portrait}
               style={{ width: "40vh", height: "40vh", borderRadius: "50%"}}

@@ -11,8 +11,8 @@ export default function PersonalLinks(props) {
     const { color, fontSize } = props;
 
     return (
-        <Grid container spacing={2}>
-          <Grid item>
+        <Grid container direction = "row" spacing = {4}>
+          <Grid item xs = {3} sm = {1} md = {1} lg = {2} >
               <Link to = "#" 
               onClick={(e) => {
                   window.location = `mailto: ${links.email}`;
@@ -25,7 +25,7 @@ export default function PersonalLinks(props) {
               </Link>
             </Grid>
 
-            <Grid item>
+            <Grid item xs = {3} sm = {1} md = {1} lg = {2}>
               <Link href = {links.github}>
                 <IconButton>
                   <GitHubIcon fontSize={fontSize} sx = {{color: color}}/>
@@ -33,7 +33,7 @@ export default function PersonalLinks(props) {
               </Link>
             </Grid>
 
-            <Grid item>
+            <Grid item xs = {3} sm = {1} md = {1} lg = {2}>
               <Link href = {links.linkedin}>
                 <IconButton>
                   <LinkedInIcon fontSize={fontSize} sx = {{color: color}}/>
