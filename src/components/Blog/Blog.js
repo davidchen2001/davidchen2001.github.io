@@ -54,7 +54,7 @@ export default function Blog() {
                   >
                       <Grid item spacing = {5} className = "blog-post-container">
                         <Grid container spacing = {5} justifyContent="space-between">
-                          <Grid item >
+                          <Grid item>
                             <Typography variant = "h4">
                               {post.title}
                             </Typography>

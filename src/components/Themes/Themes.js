@@ -16,6 +16,9 @@ export const fontFamily = createTheme({
         '"Segoe UI Symbol"',
       ].join(','),
     },
+    body1: {
+      fontSize: 17
+    },
 });
 
 export const darkTheme = {

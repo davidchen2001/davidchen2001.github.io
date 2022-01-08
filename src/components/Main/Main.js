@@ -12,15 +12,15 @@ import About from "../About/About";
 export default function Main() {
   return (
     <div className="main-container">
-      <Grid container justify="center" spacing={0}>
-        <Grid item spacing={2} xs = {6}>
+      <Grid container justify="space-between">
+        <Grid item xs = {12} sm = {12} md = {12} lg = {6}>
             <Avatar
               src={portrait}
               style={{ width: "40vh", height: "40vh", borderRadius: "50%"}}
             />
         </Grid> 
 
-        <Grid item xs = {6} className = "about-me-container">
+        <Grid item xs = {6} sm = {12} md = {12} lg = {6} >
           <About />
         </Grid>
       </Grid>

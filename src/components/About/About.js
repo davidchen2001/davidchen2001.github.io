@@ -16,7 +16,6 @@ import "./About.css";
 export default function About() {
   return (
     <ThemeProvider theme = {fontFamily}>
-      <div className="about-me">
         <Grid justify="center" alignItems="center" >
           <Grid item spacing = {2}>
             <Typography>{introduction}</Typography>
@@ -45,8 +44,6 @@ export default function About() {
           <br />
           <PersonalLinks fontSize = "large" />
         </Grid>
-      </div>
-
     </ThemeProvider>
   );
 }

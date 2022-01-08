@@ -1,16 +1,9 @@
 import React from 'react';
-import {Typography, ThemeProvider, createTheme} from "@mui/material";
-
-const theme = createTheme({
-    typography: {
-      body1: {
-        fontSize: 17,
-      },
-    },
-  });
+import {Typography, ThemeProvider} from "@mui/material";
+import {fontFamily} from "../Themes/Themes";
 
 export const introduction = (
-    <ThemeProvider theme = {theme}>
+    <ThemeProvider theme = {fontFamily}>
         <Typography variant = "h4">
         Hey! I'm David.
         </Typography>
