@@ -9,7 +9,7 @@ export default function Header(props) {
 
     return (
         <div className = "flex justify-center">
-            <Grid container spacing = {2}>
+            <Grid container>
                 <Grid item>
                     <Link href={backLink}>
                     <IconButton>
