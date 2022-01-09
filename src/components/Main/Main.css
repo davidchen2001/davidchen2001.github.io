@@ -4,3 +4,17 @@
     transform: translateY(-50%);
 }
 
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    
+}
+
+.about-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
