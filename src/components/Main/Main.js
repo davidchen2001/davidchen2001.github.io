@@ -16,7 +16,7 @@ export default function Main() {
         <Grid item xs = {12} sm = {12} md = {12} lg = {6} className = "avatar-container">
             <Avatar
               src={portrait}
-              style={{ width: "40vh", height: "40vh", borderRadius: "50%", objectFit: "cover", overflow: "hidden"}}
+              style={{ width: "35vh", height: "35vh", objectFit: "contain"}}
             />
         </Grid> 
 
