@@ -1,17 +1,17 @@
 import React from 'react';
-import {Typography, ThemeProvider} from "@mui/material";
+import {Typography, ThemeProvider, Link} from "@mui/material";
 import {fontFamily} from "../Themes/Themes";
 
 export const introduction = (
     <ThemeProvider theme = {fontFamily}>
-        <Typography variant = "h4">
+        <Typography variant = "h4" alignItems="center">
         Hey! I'm David.
         </Typography>
         <br/>
         <Typography variant = "body1">
-        I'm currently working as an Embedded Software Engineering Intern at Ciena.
-        
+        I'm currently working as an Embedded Software Engineering Intern at <Link href = "https://www.ciena.com/">Ciena</Link>. 
         </Typography>
+
         <br/>
         <Typography variant = "body1">
         I'm always down to chat! Please feel free to reach out. 
