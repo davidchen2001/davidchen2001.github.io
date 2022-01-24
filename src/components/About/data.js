@@ -15,7 +15,7 @@ export const introduction = (
         </Typography>
 
         <Typography variant = "body1">
-            I'm interested in building cool projects. 
+            I'm interested in building cool projects 🔥. 
         </Typography>
         
         <br/>
