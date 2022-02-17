@@ -20,28 +20,6 @@ export default function About() {
           <Grid item spacing = {2}>
             <Typography>{introduction}</Typography>
           </Grid>
-
-          <Grid container direction = "row" > 
-            <Grid item xs = {6} sm = {2} md = {2} lg = {3}>
-              <Link
-              to = "#" 
-              href = {links.blog}>
-                <Button variant="outlined" size="medium" >
-                  Blog  
-                </Button>
-              </Link>
-            </Grid>
-
-            <Grid item xs = {6} sm = {2} md = {2} lg = {3}>
-              <Link href = {links.resume}>
-                <Button variant="outlined" size="medium" >
-                  Resume
-                </Button>
-              </Link>
-            </Grid>
-          </Grid>
-
-          <br />
           <PersonalLinks fontSize = "large" />
         </Grid>
     </ThemeProvider>

@@ -1,7 +1,10 @@
 .main-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .avatar-container {
@@ -9,7 +12,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    margin: auto;
+    padding: 20px;
 }
 
 .about-position {

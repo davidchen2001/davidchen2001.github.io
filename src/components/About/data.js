@@ -33,7 +33,7 @@ export const introduction = (
         
         <br/>
         <Typography>
-            When I'm not working, you can find me 
+            When I'm not coding, you can find me 
             <li>
                 <Link href = "https://setfoundation.ca/">event planning</Link>
             </li>
@@ -48,6 +48,10 @@ export const introduction = (
 
             <li>
                 bouldering 🧗
+            </li>
+
+            <li>
+                sometimes <Link href = {links.blog}>blog</Link> 📓
             </li>
         </Typography>
 

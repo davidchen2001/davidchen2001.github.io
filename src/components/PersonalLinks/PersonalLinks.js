@@ -3,6 +3,7 @@ import { Grid, Link, IconButton } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FeedIcon from '@mui/icons-material/Feed';
 
 import { links } from "../About/data";
 
@@ -12,7 +13,15 @@ export default function PersonalLinks(props) {
 
     return (
         <Grid container direction = "row" spacing = {4}>
-          <Grid item xs = {3} sm = {1} md = {1} lg = {2} >
+          <Grid item xs = {3} sm = {1} md = {1} lg = {1}>
+            <Link href = {links.resume}>
+              <IconButton>
+                <FeedIcon fontSize={fontSize} sx = {{color: color}}/>
+              </IconButton>
+            </Link>
+          </Grid>
+
+          <Grid item xs = {3} sm = {1} md = {1} lg = {1} >
               <Link to = "#" 
               onClick={(e) => {
                   window.location = `mailto: ${links.email}`;
@@ -25,7 +34,7 @@ export default function PersonalLinks(props) {
               </Link>
             </Grid>
 
-            <Grid item xs = {3} sm = {1} md = {1} lg = {2}>
+            <Grid item xs = {3} sm = {1} md = {1} lg = {1}>
               <Link href = {links.github}>
                 <IconButton>
                   <GitHubIcon fontSize={fontSize} sx = {{color: color}}/>
@@ -33,7 +42,7 @@ export default function PersonalLinks(props) {
               </Link>
             </Grid>
 
-            <Grid item xs = {3} sm = {1} md = {1} lg = {2}>
+            <Grid item xs = {3} sm = {1} md = {1} lg = {1}>
               <Link href = {links.linkedin}>
                 <IconButton>
                   <LinkedInIcon fontSize={fontSize} sx = {{color: color}}/>
