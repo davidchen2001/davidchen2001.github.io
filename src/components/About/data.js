@@ -7,7 +7,7 @@ export const links = {
     github: "https://github.com/davidchen2001",
     linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
     blog: "blog",
-    resume: "https://drive.google.com/file/d/15kz2UkNOqwTiEdlYQ0O9cvLifn0kZjhi/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1EE0t1Sc8NbWdrhgsoDM95zlnCxjygT_l/view?usp=sharing",
     ciena: "https://www.ciena.com/",
     blueprint: "https://cublueprint.org/",
     beneficent: "https://beneficent.cc/",
@@ -22,13 +22,13 @@ export const introduction = (
         </Typography>
         <br/>
         <Typography variant = "body1">
-        I'm currently working as an Embedded Software Engineering Intern at <Link href = {links.ciena}>Ciena</Link>. 
-        Also currently Front End Dev @ <Link href = {links.blueprint}> CU Blueprint </Link> building a CRM platform for <Link href = {links.beneficent}> Beneficent. </Link>
-        In the future I want to learn about ML and Data Science. 
+        I'm an Embedded Software Engineering Intern at <Link href = {links.ciena}>Ciena</Link>. 
+        I'm also a front-end developer @ <Link href = {links.blueprint}> CU Blueprint</Link> building a CRM platform for <Link href = {links.beneficent}>Beneficent</Link>.
         </Typography>
-
-        <Typography variant = "body1">
-            I'm interested in working on cool projects 🔥. 
+         
+        <br/>
+        <Typography>
+        Currently seeking Summer 2023 SWE or PM internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on cool projects 🚀. 
         </Typography>
         
         <br/>

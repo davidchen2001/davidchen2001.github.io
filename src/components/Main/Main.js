@@ -16,11 +16,11 @@ export default function Main() {
         <Grid item xs = {12} sm = {12} md = {12} lg = {4} className = "avatar-container">
             <Avatar
               src={portrait}
-              style={{ width: "32vh", height: "32vh", objectFit: "contain"}}
+              style={{ width: "30vh", height: "30vh", objectFit: "contain"}}
             />
         </Grid> 
 
-        <Grid item xs = {6} sm = {12} md = {12} lg = {4} className = "about-position">
+        <Grid item xs = {6} sm = {8} md = {10} lg = {4} className = "about-position">
           <About />
         </Grid>
       </Grid>
