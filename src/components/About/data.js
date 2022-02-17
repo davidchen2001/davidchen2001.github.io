@@ -28,7 +28,7 @@ export const introduction = (
         <br/>
         <Typography variant = "body1">
         I'm an Embedded Software Engineering Intern at <Link href = {links.ciena}>Ciena</Link>. 
-        I'm also a front-end developer @ <Link href = {links.blueprint}> Blueprint</Link> building a CRM platform for <Link href = {links.beneficent}>Beneficent</Link>.
+        I'm also a front-end developer at <Link href = {links.blueprint}>Blueprint</Link> building a CRM platform for <Link href = {links.beneficent}>Beneficent</Link>.
         </Typography>
          
         <br/>
