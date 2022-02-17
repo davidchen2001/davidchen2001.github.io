@@ -2,6 +2,8 @@ import React from 'react';
 import {Typography, ThemeProvider, Link} from "@mui/material";
 import {fontFamily} from "../Themes/Themes";
 
+import "./About.css";
+
 export const links = {
     email: "chuwei.chen2001@gmail.com",
     github: "https://github.com/davidchen2001",
@@ -17,13 +19,16 @@ export const links = {
 
 export const introduction = (
     <ThemeProvider theme = {fontFamily}>
-        <Typography variant = "h4">
-        Hey! I'm David.
-        </Typography>
+        <div className = "data-title">
+            <Typography variant = "h4" sx={{ fontWeight: 'bold' }}>
+                Hey! I'm David.
+            </Typography>
+        </div>
+       
         <br/>
         <Typography variant = "body1">
         I'm an Embedded Software Engineering Intern at <Link href = {links.ciena}>Ciena</Link>. 
-        I'm also a front-end developer @ <Link href = {links.blueprint}> CU Blueprint</Link> building a CRM platform for <Link href = {links.beneficent}>Beneficent</Link>.
+        I'm also a front-end developer @ <Link href = {links.blueprint}> Blueprint</Link> building a CRM platform for <Link href = {links.beneficent}>Beneficent</Link>.
         </Typography>
          
         <br/>
