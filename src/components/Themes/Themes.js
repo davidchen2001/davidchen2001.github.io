@@ -19,6 +19,9 @@ export const fontFamily = createTheme({
     body1: {
       fontSize: 17
     },
+    bold: {
+      fontWeight: 500
+    }
 });
 
 export const darkTheme = {

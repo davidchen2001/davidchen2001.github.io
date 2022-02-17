@@ -20,7 +20,7 @@ export const links = {
 export const introduction = (
     <ThemeProvider theme = {fontFamily}>
         <div className = "data-title">
-            <Typography variant = "h4" sx={{ fontWeight: 'bold' }}>
+            <Typography variant = "h4">
                 Hey! I'm David.
             </Typography>
         </div>
