@@ -56,7 +56,7 @@ export const introduction = (
             </li>
 
             <li>
-                sometimes <Link href = {links.blog}>blog</Link> 📓
+                sometimes <Link href = {links.blog}>blogging</Link> 📓
             </li>
         </Typography>
 
