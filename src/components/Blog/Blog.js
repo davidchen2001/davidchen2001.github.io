@@ -40,7 +40,7 @@ export default function Blog() {
         <div className="header-container">
           <Header backLink = {"/"}/>
         </div>
-        
+
         <br />
 
         <div className="link-container">
@@ -52,7 +52,7 @@ export default function Blog() {
                   <span
                     key={index}
                   >
-                      <Grid container item spacing = {5} className = "blog-post-container">
+                      <Grid item spacing = {5} className = "blog-post-container">
                         <Grid container spacing = {5} justifyContent="space-between">
                           <Grid item>
                             <Typography variant = "h4">

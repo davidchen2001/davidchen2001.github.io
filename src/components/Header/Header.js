@@ -8,7 +8,7 @@ export default function Header(props) {
     const { backLink } = props;
 
     return (
-        <div className = "flex justify-center">
+        <div className = "header">
             <Grid container>
                 <Grid item>
                     <Link href={backLink}>
