@@ -8,7 +8,7 @@ import {
   ThemeProvider
 } from "@mui/material";
 import { fontFamily } from "../Themes/Themes";
-import { introduction, links } from "./data";
+import { introduction } from "./data";
 import PersonalLinks from "../PersonalLinks/PersonalLinks";
 
 import "./About.css";
@@ -17,7 +17,7 @@ export default function About() {
   return (
     <ThemeProvider theme = {fontFamily}>
         <Grid justify="center" alignItems="center" >
-          <Grid item spacing = {2}>
+          <Grid item>
             <Typography>{introduction}</Typography>
           </Grid>
           <PersonalLinks fontSize = "large" />

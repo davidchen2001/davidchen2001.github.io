@@ -52,7 +52,7 @@ export default function Blog() {
                   <span
                     key={index}
                   >
-                      <Grid item spacing = {5} className = "blog-post-container">
+                      <Grid container item spacing = {5} className = "blog-post-container">
                         <Grid container spacing = {5} justifyContent="space-between">
                           <Grid item>
                             <Typography variant = "h4">
