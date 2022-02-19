@@ -2,3 +2,9 @@
     display: flex;
     justify-content: center;
 }
+
+.data-items {
+    display: list-item;
+    margin-left: 4%;
+    list-style-type: disc;
+}

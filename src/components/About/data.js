@@ -39,25 +39,29 @@ export const introduction = (
         <br/>
         <Typography>
             When I'm not coding, you can find me 
-            <li>
-                <Link href = "https://setfoundation.ca/">event planning</Link>
-            </li>
+            <div >
+                <ul >
+                    <li className="data-items" >
+                        <Link href = "https://setfoundation.ca/">event planning</Link>
+                    </li>
 
-            <li>
-                cooking 🍳
-            </li>
+                    <li className="data-items">
+                        cooking 🍳
+                    </li>
 
-            <li>
-                watching anime 📺
-            </li>
+                    <li className="data-items">
+                        watching anime 📺
+                    </li>
 
-            <li>
-                bouldering 🧗
-            </li>
+                    <li className="data-items">
+                        bouldering 🧗
+                    </li>
 
-            <li>
-                sometimes <Link href = {links.blog}>blogging</Link> 📓
-            </li>
+                    <li className="data-items">
+                        sometimes <Link href = {links.blog}>blogging</Link> 📓
+                    </li>
+                </ul>
+            </div>
         </Typography>
 
         <br/>
