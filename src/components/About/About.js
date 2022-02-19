@@ -2,9 +2,7 @@ import React from "react";
 
 import {
   Grid,
-  Link,
   Typography,
-  Button,
   ThemeProvider
 } from "@mui/material";
 import { fontFamily } from "../Themes/Themes";
