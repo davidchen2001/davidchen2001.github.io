@@ -21,7 +21,7 @@ export default function Main() {
             />
         </Grid> 
 
-        <Grid item xs = {6} sm = {8} md = {10} lg = {9} className = "about-position">
+        <Grid item xs = {6} sm = {8} md = {10} lg = {12} className = "about-position">
           <About />
         </Grid>
       </Grid>

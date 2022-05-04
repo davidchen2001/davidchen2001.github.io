@@ -9,7 +9,7 @@ export const links = {
     github: "https://github.com/davidchen2001",
     linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
     blog: "blog",
-    resume: "https://drive.google.com/file/d/1EE0t1Sc8NbWdrhgsoDM95zlnCxjygT_l/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/13rZo98Xzoihb6aK7XPqAzluNGTMv3bud/view?usp=sharing",
     ciena: "https://www.ciena.com/",
     blueprint: "https://cublueprint.org/",
     beneficent: "https://beneficent.cc/",
@@ -27,13 +27,13 @@ export const introduction = (
        
         <br/>
         <Typography variant = "body1">
-        I'm an Embedded Software Engineering Intern at <Link href = {links.ciena}>Ciena</Link>. 
-        I'm also a front-end developer at <Link href = {links.blueprint}>Blueprint</Link> building a CRM platform for <Link href = {links.beneficent}>Beneficent</Link>.
+        I'm a 3rd Year Computer Science student at Carleton University. 
+        I'm also a SDE Intern at Amazon. 
         </Typography>
          
         <br/>
         <Typography>
-        Currently seeking Summer 2023 SWE or PM internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on cool projects 🚀. 
+        Currently seeking Summer 2023 SWE or PM internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
         </Typography>
         
         <br/>
@@ -41,16 +41,16 @@ export const introduction = (
             When I'm not coding, you can find me 
             <div >
                 <ul >
-                    <li className="data-items" >
-                        <Link href = "https://setfoundation.ca/">event planning</Link>
-                    </li>
-
                     <li className="data-items">
                         cooking 🍳
                     </li>
 
                     <li className="data-items">
                         watching anime 📺
+                    </li>
+
+                    <li className="data-items">
+                        learning anime OPs on piano 🎹
                     </li>
 
                     <li className="data-items">
@@ -66,7 +66,7 @@ export const introduction = (
 
         <br/>
         <Typography variant = "body1">
-        I'm always down to chat! Please don't hesitate to reach out. 
+        I'm always down to chat so please don't hesitate to reach out!
         </Typography>
         <br/>
     </ThemeProvider>

@@ -35,7 +35,7 @@ export default function Blog() {
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center ">Blog</h2>
         <h3 className="text-lg text-gray-600 flex justify-center ">
-          I write about anything I find interesting.
+          I sometimes write about things I find interesting.
         </h3>
         <div className="header-container">
           <Header backLink = {"/"}/>
