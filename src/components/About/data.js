@@ -9,7 +9,7 @@ export const links = {
     github: "https://github.com/davidchen2001",
     linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
     blog: "blog",
-    resume: "https://drive.google.com/file/d/13rZo98Xzoihb6aK7XPqAzluNGTMv3bud/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1GEhB6MIjuhL8dEkhyu0IOtB71vO9zIgu/view?usp=sharing",
     ciena: "https://www.ciena.com/",
     blueprint: "https://cublueprint.org/",
     beneficent: "https://beneficent.cc/",
@@ -27,8 +27,8 @@ export const introduction = (
        
         <br/>
         <Typography variant = "body1">
-        I'm a 3rd Year Computer Science student at Carleton University. 
-        I'm also a SDE Intern at Amazon. 
+        I'm in my 3rd Year studying Computer Science at Carleton University. 
+        I'm also a SDE Intern at AWS. 
         </Typography>
          
         <br/>
@@ -46,7 +46,7 @@ export const introduction = (
                     </li>
 
                     <li className="data-items">
-                        watching anime 📺
+                        watching anime or marvel 📺
                     </li>
 
                     <li className="data-items">
@@ -54,7 +54,7 @@ export const introduction = (
                     </li>
 
                     <li className="data-items">
-                        bouldering 🧗
+                        bouldering 🧗 or practicing muay thai 🥊
                     </li>
 
                     <li className="data-items">
