@@ -28,12 +28,12 @@ export const introduction = (
         <br/>
         <Typography variant = "body1">
         I'm in my 3rd Year studying Computer Science at Carleton University. 
-        I'm also a SDE Intern at AWS. 
+        Previously, I was a SDE Intern at AWS. 
         </Typography>
          
         <br/>
         <Typography>
-        Currently seeking Summer 2023 SWE or PM internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
+        Currently seeking Summer 2023 SWE Internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
         </Typography>
         
         <br/>
