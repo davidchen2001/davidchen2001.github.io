@@ -33,7 +33,7 @@ export const introduction = (
          
         <br/>
         <Typography>
-        Currently seeking Summer 2023 SWE Internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
+        Currently seeking Winter 2024 SWE Internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
         </Typography>
         
         <br/>
