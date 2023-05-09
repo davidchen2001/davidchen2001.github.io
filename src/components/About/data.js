@@ -9,7 +9,7 @@ export const links = {
     github: "https://github.com/davidchen2001",
     linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
     blog: "blog",
-    resume: "https://drive.google.com/file/d/1wMDiPVsb77sLgvbtN-LSDffYP6ZPECjN/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1zNFX3ro1uqx1w-F7nLMnZVmCbTw8XeeQ/view?usp=sharing",
     ciena: "https://www.ciena.com/",
     blueprint: "https://cublueprint.org/",
     beneficent: "https://beneficent.cc/",
