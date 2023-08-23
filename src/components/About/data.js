@@ -9,7 +9,7 @@ export const links = {
     github: "https://github.com/davidchen2001",
     linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
     blog: "blog",
-    resume: "https://drive.google.com/file/d/1IS4jjV62PI4yeXQGUK364lHZsfZMOCaM/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1A7B2R38Xxd9FTTz0ihsm6W1X-5CL9EiT/view?usp=sharing",
     ciena: "https://www.ciena.com/",
     blueprint: "https://cublueprint.org/",
     beneficent: "https://beneficent.cc/",
@@ -28,12 +28,12 @@ export const introduction = (
         <br/>
         <Typography variant = "body1">
         I'm in my 4th Year studying Computer Science at Carleton University. 
-        Previously, I was a SDE Intern at AWS. This summer, I'll be working at MongoDB on the data sharding team.
+        Previously, I was a SDE Intern at AWS and MongoDB.
         </Typography>
          
         <br/>
         <Typography>
-        I'm currently seeking Winter 2024 SWE Internship opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
+        I'm currently seeking Winter 2024 SWE Internship / New Grad opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
         </Typography>
         
         <br/>
