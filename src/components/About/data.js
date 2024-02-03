@@ -1,73 +1,66 @@
-import React from 'react';
-import {Typography, ThemeProvider, Link} from "@mui/material";
-import {fontFamily} from "../Themes/Themes";
+import React from "react";
+import { Typography, ThemeProvider, Link } from "@mui/material";
+import { fontFamily } from "../Themes/Themes";
 
 import "./About.css";
 
 export const links = {
-    email: "chuwei.chen2001@gmail.com",
-    github: "https://github.com/davidchen2001",
-    linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
-    blog: "blog",
-    resume: "https://drive.google.com/file/d/1A7B2R38Xxd9FTTz0ihsm6W1X-5CL9EiT/view?usp=sharing",
-    ciena: "https://www.ciena.com/",
-    blueprint: "https://cublueprint.org/",
-    beneficent: "https://beneficent.cc/",
-    ross_video: "https://www.rossvideo.com/",
-    inception: "https://www.rossvideo.com/products-services/management-systems/newsroom-computer-systems/inception-news/",
-}
+  email: "chuwei.chen2001@gmail.com",
+  github: "https://github.com/davidchen2001",
+  linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
+  blog: "blog",
+  resume:
+    "https://drive.google.com/file/d/1A7B2R38Xxd9FTTz0ihsm6W1X-5CL9EiT/view?usp=sharing",
+  ciena: "https://www.ciena.com/",
+  blueprint: "https://cublueprint.org/",
+  beneficent: "https://beneficent.cc/",
+  ross_video: "https://www.rossvideo.com/",
+  inception:
+    "https://www.rossvideo.com/products-services/management-systems/newsroom-computer-systems/inception-news/",
+};
 
 export const introduction = (
-    <ThemeProvider theme = {fontFamily}>
-        <div className = "data-title">
-            <Typography variant = "h4">
-                Hey! I'm David.
-            </Typography>
-        </div>
-       
-        <br/>
-        <Typography variant = "body1">
-        I'm in my 4th Year studying Computer Science at Carleton University. 
-        Previously, I was a SDE Intern at AWS and MongoDB.
-        </Typography>
-         
-        <br/>
-        <Typography>
-        I'm currently seeking Winter 2024 SWE Internship / New Grad opportunities. Here is my <Link href = {links.resume}>résumé</Link>. I want to work on something cool 🔥. 
-        </Typography>
-        
-        <br/>
-        <Typography>
-            When I'm not coding, you can find me 
-            <div >
-                <ul >
-                    <li className="data-items">
-                        cooking 🍳
-                    </li>
+  <ThemeProvider theme={fontFamily}>
+    <div className="data-title">
+      <Typography variant="h4">Hey! I'm David.</Typography>
+    </div>
 
-                    <li className="data-items">
-                        learning Japanese 
-                    </li>
+    <br />
+    <Typography variant="body1">
+      I'm in my 4th Year studying Computer Science at Carleton University.
+      Previously, I was a SWE Intern at MongoDB and AWS.
+    </Typography>
 
-                    <li className="data-items">
-                        watching anime or marvel 📺
-                    </li>
+    <br />
+    <Typography>
+      I've been living in Tokyo since September 2023. Currently I'm on exchange
+      at Aoyama Gakuin University (青山学院大学).
+    </Typography>
 
-                    <li className="data-items">
-                        bouldering 🧗 or practicing muay thai 🥊
-                    </li>
+    <br />
+    <Typography>
+      In my free time, you can find me
+      <div>
+        <ul>
+          <li className="data-items">learning Japanese (まだ大変です 😅) </li>
 
-                    <li className="data-items">
-                        sometimes <Link href = {links.blog}>blogging</Link> 📓
-                    </li>
-                </ul>
-            </div>
-        </Typography>
+          <li className="data-items">exploring Japan 🗾 </li>
 
-        <br/>
-        <Typography variant = "body1">
-        I'm always down to chat so please don't hesitate to reach out!
-        </Typography>
-        <br/>
-    </ThemeProvider>
+          <li className="data-items">watching Marvel or Disney 📺</li>
+
+          <li className="data-items">practicing Nippon Kempo 🥊</li>
+
+          <li className="data-items">
+            sometimes <Link href={links.blog}>blogging</Link> 📓
+          </li>
+        </ul>
+      </div>
+    </Typography>
+
+    <br />
+    <Typography variant="body1">
+      I'm always down to chat so please don't hesitate to reach out!
+    </Typography>
+    <br />
+  </ThemeProvider>
 );
