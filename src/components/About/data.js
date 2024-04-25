@@ -5,12 +5,12 @@ import { fontFamily } from "../Themes/Themes";
 import "./About.css";
 
 export const links = {
-  email: "chuwei.chen2001@gmail.com",
+  email: "davidcchen01@gmail.com",
   github: "https://github.com/davidchen2001",
   linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
   blog: "blog",
   resume:
-    "https://drive.google.com/file/d/1A7B2R38Xxd9FTTz0ihsm6W1X-5CL9EiT/view?usp=sharing",
+    "https://drive.google.com/file/d/1XcIF0C2AD_MTHxjqdn6rhj1ah70mWe8i/view?usp=sharing",
   ciena: "https://www.ciena.com/",
   blueprint: "https://cublueprint.org/",
   beneficent: "https://beneficent.cc/",
