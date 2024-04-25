@@ -9,8 +9,6 @@ export const links = {
   github: "https://github.com/davidchen2001",
   linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
   blog: "blog",
-  resume:
-    "https://drive.google.com/file/d/1XcIF0C2AD_MTHxjqdn6rhj1ah70mWe8i/view?usp=sharing",
 };
 
 export const introduction = (
@@ -21,14 +19,14 @@ export const introduction = (
 
     <br />
     <Typography variant="body1">
-      I'm in my 4th Year studying Computer Science at Carleton University.
-      Previously, I was a SWE Intern at MongoDB and AWS.
+      I'm a 4th year student at Carleton University, majoring in Computer
+      Science. I'll be graduating in June 2024.
     </Typography>
 
     <br />
     <Typography>
-      I've been living in Tokyo since September 2023. Currently I'm on exchange
-      at Aoyama Gakuin University (青山学院大学).
+      I've been living in Tokyo since September 2023. Currently, I'm studying
+      abroad at Aoyama Gakuin University (青山学院大学).
     </Typography>
 
     <br />
@@ -36,7 +34,7 @@ export const introduction = (
       In my free time, you can find me
       <div>
         <ul>
-          <li className="data-items">learning Japanese (まだ大変です 😅) </li>
+          <li className="data-items">learning Japanese (まだ大変だ 😅) </li>
 
           <li className="data-items">exploring Japan 🗾 </li>
 
@@ -53,7 +51,7 @@ export const introduction = (
 
     <br />
     <Typography variant="body1">
-      I'm always down to chat so please don't hesitate to reach out!
+      I'm always happy to chat and meet new people!
     </Typography>
     <br />
   </ThemeProvider>
