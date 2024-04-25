@@ -11,12 +11,6 @@ export const links = {
   blog: "blog",
   resume:
     "https://drive.google.com/file/d/1XcIF0C2AD_MTHxjqdn6rhj1ah70mWe8i/view?usp=sharing",
-  ciena: "https://www.ciena.com/",
-  blueprint: "https://cublueprint.org/",
-  beneficent: "https://beneficent.cc/",
-  ross_video: "https://www.rossvideo.com/",
-  inception:
-    "https://www.rossvideo.com/products-services/management-systems/newsroom-computer-systems/inception-news/",
 };
 
 export const introduction = (
