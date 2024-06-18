@@ -19,14 +19,14 @@ export const introduction = (
 
     <br />
     <Typography variant="body1">
-      I'm a 4th year student at Carleton University, majoring in Computer
-      Science. I'll be graduating in June 2024.
+      I graduated from Carleton University in June 2024, with a major in
+      Computer Science.
     </Typography>
 
     <br />
     <Typography>
-      I've been living in Tokyo since September 2023. Currently, I'm studying
-      abroad at Aoyama Gakuin University (青山学院大学).
+      Just before graduation I was living in Tokyo, studying abroad at Aoyama
+      Gakuin University (青山学院大学).
     </Typography>
 
     <br />
@@ -36,14 +36,14 @@ export const introduction = (
         <ul>
           <li className="data-items">learning Japanese (まだ大変だ 😅) </li>
 
-          <li className="data-items">exploring Japan 🗾 </li>
-
-          <li className="data-items">watching Marvel or Disney 📺</li>
+          <li className="data-items">cooking 🍳</li>
 
           <li className="data-items">practicing Nippon Kempo 🥊</li>
 
+          <li className="data-items">traveling 🗺️ </li>
+
           <li className="data-items">
-            sometimes <Link href={links.blog}>blogging</Link> 📓
+            sometimes <Link href={links.blog}>writing</Link> 📓
           </li>
         </ul>
       </div>
@@ -51,7 +51,8 @@ export const introduction = (
 
     <br />
     <Typography variant="body1">
-      I'm always happy to chat and meet new people!
+      I'm always happy to chat and meet new people! I'm also always looking for
+      people to practice Japanese or Mandarin with.
     </Typography>
     <br />
   </ThemeProvider>

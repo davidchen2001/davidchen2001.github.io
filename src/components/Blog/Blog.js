@@ -31,42 +31,41 @@ export default function Blog() {
   }, []);
 
   return (
-    <ThemeProvider theme = {fontFamily}>
+    <ThemeProvider theme={fontFamily}>
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center ">Blog</h2>
         <h3 className="text-lg text-gray-600 flex justify-center ">
-          I sometimes write about things I find interesting.
+          This is still a WIP.
         </h3>
         <div className="header-container">
-          <Header backLink = {"/"}/>
+          <Header backLink={"/"} />
         </div>
 
         <br />
 
         <div className="link-container">
-
           <Grid>
             {allPostsData &&
-              allPostsData.reverse().map((post, index) => ( 
+              allPostsData.reverse().map((post, index) => (
                 <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
-                  <span
-                    key={index}
-                  >
-                      <Grid item spacing = {5} className = "blog-post-container">
-                        <Grid container spacing = {5} justifyContent="space-between">
-                          <Grid item>
-                            <Typography variant = "h4">
-                              {post.title}
-                            </Typography>
-                          </Grid>
-
-                          <Grid item  className = "blog-post-date-text">
-                            <Typography variant = "h4">
-                              {post.publishedAt.toString().substring(0,10)}
-                            </Typography>
-                          </Grid>
+                  <span key={index}>
+                    <Grid item spacing={5} className="blog-post-container">
+                      <Grid
+                        container
+                        spacing={5}
+                        justifyContent="space-between"
+                      >
+                        <Grid item>
+                          <Typography variant="h4">{post.title}</Typography>
                         </Grid>
-                      </Grid> 
+
+                        <Grid item className="blog-post-date-text">
+                          <Typography variant="h4">
+                            {post.publishedAt.toString().substring(0, 10)}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Grid>
                     <br />
                   </span>
                 </Link>
@@ -74,7 +73,6 @@ export default function Blog() {
           </Grid>
         </div>
       </div>
-    
     </ThemeProvider>
   );
 }
