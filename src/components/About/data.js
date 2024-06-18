@@ -8,7 +8,7 @@ export const links = {
   email: "davidcchen01@gmail.com",
   github: "https://github.com/davidchen2001",
   linkedin: "https://www.linkedin.com/in/david-chuwei-chen/",
-  blog: "blog",
+  blog: "https://davidchen2001.substack.com/",
 };
 
 export const introduction = (
