@@ -17,3 +17,9 @@
 ### How to run the project
 
 To run the project locally, run the command `npm start`
+
+### How to deploy the project
+
+1. Run the commend
+
+`npm run deploy`
