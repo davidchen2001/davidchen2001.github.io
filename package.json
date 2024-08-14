@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://davidchen2001.github.io/",
+  "homepage": "http://davidchen2001.github.io/davidchen2001.github.io",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.7.1",
